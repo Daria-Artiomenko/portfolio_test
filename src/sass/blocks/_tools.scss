@@ -28,20 +28,20 @@
         padding-top: 120px;
         display: grid;
         grid-template-columns: repeat(3, 350px);
-        grid-template-rows: repeat(2, minmax(70px auto));
+        grid-template-rows: repeat(2, 70px);
         grid-auto-rows: minmax(70px auto);
         column-gap: 45px;
         row-gap: 30px;
     }
     &-tool__item {
-        &-head {
-            display: flex;
-            justify-content: space-between;
-        }
+        display: grid;
+        grid-template: 21px 14px/200px 35px;
+        justify-content: space-between;
+        align-content: space-between;
         &-title {
             position: relative;
             @include before_circle;
-            padding: 2px 0 0 13px;
+            padding: 5px 0 0 13px;
             
         }
         &-pros {
@@ -50,12 +50,12 @@
             font-weight: 500;
         }
         &-scale {
-            margin-top: 20px;
             width: 350px;
             height: 14px;
             border-radius: 4px;
             background-color: #E8E4DE;
-            &_yellow {
+            span {
+                display: block;
                 border-radius: 4px;
                 height: 14px;
                 background-color: $main-color;

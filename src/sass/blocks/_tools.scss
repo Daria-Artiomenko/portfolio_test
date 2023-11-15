@@ -4,7 +4,7 @@
         display: grid;
         grid-template-columns: repeat(4, 270px);
         grid-template-rows: repeat(2, minmax(270px auto));
-        grid-auto-rows: minmax(270px auto);
+        grid-auto-rows: 270px;
         gap: 13px;
         margin-top: 60px;
     }
@@ -29,7 +29,7 @@
         display: grid;
         grid-template-columns: repeat(3, 350px);
         grid-template-rows: repeat(2, 70px);
-        grid-auto-rows: minmax(70px auto);
+        grid-auto-rows: 70px;
         column-gap: 45px;
         row-gap: 30px;
     }

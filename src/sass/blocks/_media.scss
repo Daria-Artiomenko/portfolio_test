@@ -53,6 +53,12 @@
             }
         }
     }
+    .pricelist {
+        &__wrapper {
+            justify-content: center;
+            column-gap: 80px;
+        }
+    }
 }
 @media (max-width: 992px) {
     .container {
@@ -96,6 +102,12 @@
             .vertical {
                 grid-column: 2 / 3;
             }
+        }
+    }
+    .pricelist {
+        &__wrapper {
+            grid-template-columns: 366px;
+            row-gap: 15px;
         }
     }
 }
@@ -210,6 +222,28 @@
             grid-template: 28px 14px/200px 50px;
             &-scale {
                 width: 280px;
+            }
+        }
+    }
+    .pricelist {
+        &__wrapper {
+            padding-top: 20px;
+            grid-template-columns: 275px;
+            row-gap: 15px;
+            justify-content: right;
+        }
+        &__blocks {
+            grid-template-rows: repeat(3, auto);
+            grid-template-columns: 275px;
+        }
+        &__block {
+            grid-template-rows:  auto auto;
+            grid-template-columns: auto auto;
+        }
+        &__title {
+            &:before {
+                content: '';;
+                left: -20px;
             }
         }
     }
